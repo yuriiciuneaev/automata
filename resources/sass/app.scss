@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
+
+// variables
+
+@import 'libraries';
+@import 'mixins';
+
+//pages and layouts
+@import 'admin-sidenav-header';
+@import 'header';
+@import 'home';
+@import 'products';
+@import 'services';
+@import 'careers';
+@import 'contacts';
+@import 'investors';
+@import 'login';
+@import 'subscription';
+@import 'main';

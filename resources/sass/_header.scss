@@ -1,0 +1,40 @@
+@media only screen and (min-width: 992px) {
+    .header-nav {
+        background-color: transparent;
+        padding: 10px 60px;
+        box-shadow: none;
+        z-index: 10;
+        .container {
+            width: 60% !important;
+            ul {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                li {
+                    a {
+                        color: white;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+    }
+}
+.logo {
+    // line-height: 76px;
+    img {
+        position: relative;
+        top: 12px;
+        // width: 120px;
+        height: 36px;
+    }
+}
+// .header-logo {
+//     .brand-logo {
+//         line-height: 76px;
+//         img {
+//             width: 120px;
+//             height: 36px;
+//         }
+//     }
+// }

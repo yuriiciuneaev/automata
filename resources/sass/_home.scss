@@ -1,0 +1,124 @@
+#home {
+    .first-section {
+        height: 100vh;
+        background-image: url("/images/bg1.png");
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .second-section {
+        position: relative;
+        #controller-container {
+            width: 90%;
+            // height: 400px;
+            height: auto;
+            // z-index: 2;
+        }
+        #img_1 {
+            height: 760px;
+            position: absolute;
+            right: 0;
+            top: -80px;
+            z-index: 1;
+        }
+        .text-content {
+            width: 35%;
+            position: absolute;
+            left: 18%;
+            top: 150px;
+            text-align: left;
+        }
+    }
+
+    .third-section {
+        padding: 100px 50px;
+        .text-content {
+            text-align: center;
+        }
+    }
+
+    .fourth-section {
+        position: relative;
+        display: flex;
+        flex-direction: row-reverse;
+        #controller-container {
+            width: 90%;
+            height: auto;
+        }
+        #img_1 {
+            position: absolute;
+            left: -320px;
+            top: -155px;
+            z-index: 1;
+        }
+        .text-content {
+            width: 35%;
+            position: absolute;
+            right: 18%;
+            top: 150px;
+            text-align: right;
+        }
+    }
+}
+// .second-section{
+//     // height: 40vh;
+//     height: 1400px;
+//     padding-top: 750px;
+//     background-color: #140033;
+//     position: relative;
+//     // z-index: -1;
+//     // background-image: url('/images/Group_33.png');
+//     // background-repeat: no-repeat;
+//     // background-position: top;
+//     .container_1{
+//         #controller{
+//             height: auto;
+//             width: 100%;
+//             position: absolute;
+//             top: -220px;
+//         }
+//         .text-content{
+//             width: 25%;
+//             position: absolute;
+//             left:18%;
+//             top:50px;
+//         }
+//     }
+//     .container_2{
+//         .text-content{
+//             text-align: center;
+//             width: 80%;
+//             margin: auto;
+//         }
+//         #polygon-bg{
+//             position: absolute;
+//             top:520px;
+//             width: 100%;
+//         }
+//     }
+//     .bg-overflow{
+//         position: relative;
+//         .bg{
+//             background-color: #140033;
+//             height: 665px;
+//         }
+//         img{
+//             width: 100%;
+//             position: absolute;
+//             top: 0;
+//             // left: -10%;
+//         }
+//         .text-content{
+//             width: 35%;
+//             position: absolute;
+//             right:18%;
+//             top:150px;
+//             text-align: right;
+//         }
+//     }
+// }
+
+// .third-section{
+//     // height: 100vh;
+//     background-color: #140033;
+// }

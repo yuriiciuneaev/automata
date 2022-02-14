@@ -1,0 +1,38 @@
+#careers {
+    .first-section {
+        height: 120vh;
+        background-image: url("/images/bg_2.png");
+        background-repeat: no-repeat;
+        background-position: 36% 88%;
+        background-color: black;
+        .text-content {
+            width: 30%;
+            position: absolute;
+            left: 18%;
+            top: 150px;
+            text-align: left;
+            .button {
+                margin: 0;
+            }
+        }
+    }
+    .second-section {
+        position: relative;
+        #controller-container {
+            width: 90%;
+        }
+        #img_1 {
+            position: absolute;
+            left: 250px;
+            top: -155px;
+            z-index: 1;
+        }
+        .text-content {
+            width: 30%;
+            position: absolute;
+            right: 250px;
+            top: 150px;
+            text-align: left;
+        }
+    }
+}
