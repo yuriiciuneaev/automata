@@ -4,6 +4,7 @@
 // variables
 
 @import 'libraries';
+@import 'breakpoints-map';
 @import 'mixins';
 
 //pages and layouts
@@ -16,5 +17,6 @@
 @import 'contacts';
 @import 'investors';
 @import 'login';
-@import 'subscription';
+@import 'about-us';
+@import 'footer';
 @import 'main';

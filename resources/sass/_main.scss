@@ -2,8 +2,15 @@
     font-family: 'Open Sans', sans-serif;
     color: white;
 }
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 body{
-    background-color: #140033;
+    // background-color: #140033;
+    background-color: #11012d;
 }
 p{
     font-size: 16px;
@@ -62,6 +69,7 @@ p{
         display: block;
         margin: auto;
         height: 60px;
+        max-width: 100%;
     }
     .button_text{
         position: absolute;
@@ -72,39 +80,24 @@ p{
         -ms-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
         font-size: 20px;
+        white-space: nowrap;
     }
 }
 .bg-2{
+    // display: none;
     position: absolute;
-    width: 1400px;
+    width: 250%;
     height: 180px;
     left: 50%;
     transform: translate(-50%, 0);
     top: -58px;
     z-index: -1;
+
+    @include breakpoint(lg, max) {
+        // display: none;
+    }
 }
-// .btn-hexa {
-//     text-align: center;
-//     text-decoration: none;
-//     user-select: none;
-//     padding: 0.375rem 2rem;
-//     display: block;
-//     width: 350px;
-//     margin: auto;
-//     --btn-raise: 1rem;
-//     clip-path: polygon(
-//         var(--btn-raise) 0%,
-//         calc(100% - var(--btn-raise)) 0%,
-//         100% 50%,
-//         calc(100% - var(--btn-raise)) 100%,
-//         var(--btn-raise) 100%,
-//         0 50%
-//     );
-//     background-color: #e2365c;
-//     text-transform: uppercase;
-//     color: white;
-//     // border:1px solid white;
-// }
+
 .button {
     position: relative;
     display: block;
@@ -295,4 +288,22 @@ nav{
 }
 nav ul a{
     padding: 0;
+}
+
+.hero-section {
+    .img_attached {
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translate(-25%, -55%);
+        width: 200px;
+    }
+
+    .shape-polygon {
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translate(-50%, 25%);
+        width: 350px;
+    }
 }

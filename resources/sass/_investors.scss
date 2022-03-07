@@ -1,38 +1,169 @@
 #investors {
-    .first-section {
+    .hero-section {
         height: 120vh;
         background-image: url("/images/bg_3.png");
         background-repeat: no-repeat;
-        background-position: 72% 105%;
+        background-size: cover;
+        background-position: right;
         background-color: #1c151d;
+
         .text-content {
             width: 30%;
             position: absolute;
             left: 18%;
             top: 150px;
             text-align: left;
-            .button {
-                margin: 0;
+            
+            @include breakpoint(md, min) {
+                .btn-container {
+                    width: fit-content
+                }
+                
+                img {
+                    margin: 0;
+                }
+            }
+        }
+
+        @include breakpoint(md, max) {
+            height: 100vh;
+
+            .text-content {
+                top: 50%;
+                transform: translateY(-50%);
+                left: 0;
+                padding: 40px;
+                text-align: center;
+                width: 100%;
+                
+                h3 {
+                    font-size: 2.25rem;
+                }
             }
         }
     }
+
     .second-section {
         position: relative;
-        #controller-container {
-            width: 90%;
+        @include breakpoint(md, max) {
+            background-color: #000;
         }
-        #img_1 {
+
+        .shape-box-1 {
+            content: '';
+            background: #140033;
+            -webkit-clip-path: polygon(0 0, 0 100%, 100% 0%);
+            clip-path: polygon(0 0, 0 100%, 100% 0%);
             position: absolute;
-            left: 250px;
-            top: -155px;
+            top: 0;
+            left: 0;
+            width: 10vw;
+            height: 15vw;
             z-index: 1;
+
+            @include breakpoint(sm, max) {
+                width: 30vw;
+                height: 45vw;                
+            }
         }
-        .text-content {
-            width: 30%;
+
+        .shape-box-2 {
+            content: '';
+            background: #d11446;
+            -webkit-clip-path: polygon(0 0, 0 100%, 100% 0%);
+            clip-path: polygon(0 0, 0 100%, 100% 0%);
             position: absolute;
-            right: 250px;
-            top: 150px;
+            top: 0;
+            left: 3vw;
+            width: 4vw;
+            height: 7vw;            
+            z-index: 2;
+
+            @include breakpoint(sm, max) {
+                left: 9vw;
+                width: 12vw;
+                height: 21vw;    
+            }
+        }
+        
+        #img_2 {
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            width: 200px;
+            transform: translate(20%, -10%);
+
+            @include breakpoint(md, max) {
+                transform: translate(20%, -20%);
+            }
+        }
+
+        #img_3 {
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            width: 300px;
+            transform: translate(35%, 20px);
+
+            @include breakpoint(md, max) {
+                transform: translate(35%, 0);
+            }
+        }
+
+        .text-content {
+            background-color: #000;
+            padding: {
+                left: 45%;
+                right: 20px;
+                top: 50px;
+                bottom: 50px;
+            }
+            position: relative;
             text-align: left;
+            width: 90%;
+
+            h3 {
+                margin-top: 0px;
+            }
+
+            h3, p {
+                z-index: 2;
+                position: relative;
+            }
+
+            #img_1 {
+                height: 120%;
+                left: 25%;
+                bottom: 0;
+                position: absolute;
+                transform: translateX(-50%);
+                z-index: 1;
+
+                @include breakpoint(md, max) {
+                    -webkit-transform: scaleX(-1);
+                    transform: scaleX(-1);
+                }
+
+                @include breakpoint(sm, max) {
+                    width: 30vw;
+                    height: auto;
+                    left: unset;
+                    right: 20px;                    
+                }
+            }
+
+            @include breakpoint(md, max) {
+                background-color: transparent;
+                margin-top: 0px;
+                padding: 40px;
+                width: 100%;
+                z-index: 4;
+
+                h3 {
+                    font-size: 2.25rem;
+                    text-align: center;
+                }
+            }
         }
     }
 }

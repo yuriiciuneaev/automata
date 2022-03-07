@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+sitemap: https://automata3d.com/sitemap.xml
